@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .ticker {
+        background: var(--lime);
+        overflow: hidden;
+        padding: 14px 0;
+        background-color: rgb(131, 135, 25);
+        color: white;
+        position: sticky;
+      }
+      .ticker-inner {
+        display: flex;
+        animation: ticker 20s linear infinite;
+        white-space: nowrap;
+      }
+      .ticker-item {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 1.1rem;
+        letter-spacing: 0.1em;
+        color: var(--ink);
+        padding: 0 24px;
+        flex-shrink: 0;
+      }
+      .ticker-sep {
+        color: var(--cobalt);
+        color: blue;
+      }
+      @keyframes ticker {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-50%);
+        }
+      }
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="logo.png" alt="" />
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achivements">Achivements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="home" class="section reveal">
+        <div class="intro">
+          <span>Welcome, I'm</span>
+          <div>Nataru</div>
+          <p id="surname-para">Debsarma</p>
+          <p class="role">I am a <span id="typing"></span></p>
+          <p>
+            Building reliable software with clean desing and <br />solid
+            fundamentals.
+          </p>
+          <div class="about-icons">
+            <a
+              href="https://www.linkedin.com/in/nataru-debsarma-817634225?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/Nataru27" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#" target="_blank">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/nata_ru_14?igsh=dHJnZ2NwMTNtajh3"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/nataru27" target="_blank">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+        <div class="image-section">
+          <div class="image-card">
+            <img src="portfolio.jpg" alt="Profile Photo" />
+          </div>
+        </div>
+      </div>
+      <div class="ticker">
+        <div class="ticker-inner" id="ticker">
+          <span class="ticker-item"
+            >BRAND IDENTITY <span class="ticker-sep">&#10022;</span></span
+          >
+          <span class="ticker-item"
+            >UI DESIGN <span class="ticker-sep">&#10022;</span></span
+          >
+          <span class="ticker-item"
+            >MOTION GRAPHICS <span class="ticker-sep">&#10022;</span></span
+          >
+          <span class="ticker-item"
+            >PRINT DESIGN <span class="ticker-sep">&#10022;</span></span
+          >
+          <span class="ticker-item"
+            >ART DIRECTION <span class="ticker-sep">&#10022;</span></span
+          >
+          <span class="ticker-item"
+            >TYPOGRAPHY <span class="ticker-sep">&#10022;</span></span
+          >
+          <span class="ticker-item"
+            >VISUAL STORYTELLING <span class="ticker-sep">&#10022;</span></span
+          >
+          <span class="ticker-item"
+            >BRAND IDENTITY <span class="ticker-sep">&#10022;</span></span
+          >
+          <span class="ticker-item"
+            >UI DESIGN <span class="ticker-sep">&#10022;</span></span
+          >
+          <span class="ticker-item"
+            >MOTION GRAPHICS <span class="ticker-sep">&#10022;</span></span
+          >
+          <span class="ticker-item"
+            >PRINT DESIGN <span class="ticker-sep">&#10022;</span></span
+          >
+          <span class="ticker-item"
+            >ART DIRECTION <span class="ticker-sep">&#10022;</span></span
+          >
+          <span class="ticker-item"
+            >TYPOGRAPHY <span class="ticker-sep">&#10022;</span></span
+          >
+          <span class="ticker-item"
+            >VISUAL STORYTELLING <span class="ticker-sep">&#10022;</span></span
+          >
+        </div>
+      </div>
+      <div id="about" class="section reveal">
+        <div class="about-section">
+          <h1 class="title">About <span>Me</span></h1>
+          <div class="underline"></div>
+          <div class="about-box">
+            <p>
+              I am a Computer Science student growing into a Full-Stack and AI
+              developer with a strong interest in building practical systems
+              that combine backend engineering and intelligent automation
+              <br /><br />.My work focuses on developing applications using
+              Java, Spring Boot, SQL, and machine learning tools. I enjoy
+              designing systems where software and AI work together to solve
+              real problems, from automation workflows to AI-powered
+              interfaces.<br /><br />One of my key projects is this portfolio
+              platform, which includes an AI chatbot capable of answering
+              questions about my projects and skills. The chatbot retrieves
+              relevant information from the backend database and generates
+              contextual responses, demonstrating how structured data retrieval
+              can be combined with modern AI models.<br /><br />I am
+              particularly interested in backend architecture, AI-assisted
+              applications, and intelligent automation systems. Through my
+              projects, I aim to build software that is not only functional but
+              also thoughtfully designed and scalable.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="skills" class="section reveal">
+        <section class="skills">
+          <h2 class="section-title">Skills & <span>Expertise</span></h2>
+          <div class="underline"></div>
+
+          <div class="skills-container">
+            <div class="skill-card">
+              <div class="card-title">
+                <i class="fas fa-code"></i>
+                <h3>Programming Languages</h3>
+              </div>
+
+              <div class="tags">
+                <span>Python</span>
+                <span>SQL</span>
+                <span>C Programming</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Javascript</span>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="card-title">
+                <i class="fas fa-wrench"></i>
+                <h3>Tools & Platforms</h3>
+              </div>
+
+              <div class="tags">
+                <span>Git</span>
+                <span>Github</span>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="card-title">
+                <i class="fas fa-book"></i>
+                <h3>Core Concepts and Frameworks</h3>
+              </div>
+
+              <div class="tags">
+                <span>React JS</span>
+                <span>OOPs</span>
+                <span>DSA</span>
+                <span>DBMS</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div>
+        <section class="education">
+          <div class="education-title">
+            <div class="icon">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+
+            <div id="education" class="section reveal">
+              <h2>Education</h2>
+              <p>My Academic Journey</p>
+            </div>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+
+              <div class="edu-card">
+                <div class="edu-header">
+                  <h3>Bachelors of Computer Application</h3>
+
+                  <span class="date">
+                    <i class="fa-solid fa-calendar"></i>
+                    2025 - Present
+                  </span>
+                </div>
+
+                <p class="school">Swami Vivekananda University</p>
+
+                <span class="grade"> 🎓 8.50 SGPA </span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+
+              <div class="edu-card">
+                <div class="edu-header">
+                  <h3>WBHCSE</h3>
+
+                  <span class="date">
+                    <i class="fa-solid fa-calendar"></i>
+                    2025
+                  </span>
+                </div>
+
+                <p class="school">Kaliyaganj Parbati Sundari High School</p>
+
+                <span class="grade"> 🎓 84% </span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+
+              <div class="edu-card">
+                <div class="edu-header">
+                  <h3>WBBSE</h3>
+
+                  <span class="date">
+                    <i class="fa-solid fa-calendar"></i>
+                    2023
+                  </span>
+                </div>
+
+                <p class="school">Dalimgaon High School</p>
+
+                <span class="grade"> 🎓 71% </span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="projects">
+        <section class="projects">
+          <h2 class="section-title">My <span>Projects</span></h2>
+          <div class="underline"></div>
+          <p class="subtitle">
+            A selection of things I've built — click the view details to see the
+            full details.
+          </p>
+          <div class="project-display">
+            <div class="projects-container">
+              <div class="project-card">
+                <div class="icon">
+                  <i class="fa-regular fa-folder-open"></i>
+                </div>
+                <h3>Amazon Clone</h3>
+                <p>
+                  A full-stack developer portfolio platform featuring an
+                  AI-powered chatbot that dynamically answers questions about
+                  projects and skills.
+                </p>
+                <div class="tags">
+                  <span>JavaScript</span>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                </div>
+                <a href="#" class="details">View Details →</a>
+              </div>
+            </div>
+            <div class="projects-container">
+              <div class="project-card">
+                <div class="icon">
+                  <i class="fa-regular fa-folder-open"></i>
+                </div>
+                <h3>Meesho Clone</h3>
+                <p>
+                  A full-stack developer portfolio platform featuring an
+                  AI-powered chatbot that dynamically answers questions about
+                  projects and skills.
+                </p>
+                <div class="tags">
+                  <span>JavaScript</span>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                </div>
+                <a href="#" class="details">View Details →</a>
+              </div>
+            </div>
+            <div class="projects-container">
+              <div class="project-card">
+                <div class="icon">
+                  <i class="fa-regular fa-folder-open"></i>
+                </div>
+                <h3>Code With Coffe</h3>
+                <p>
+                  A full-stack developer portfolio platform featuring an
+                  AI-powered chatbot that dynamically answers questions about
+                  projects and skills.
+                </p>
+                <div class="tags">
+                  <span>JavaScript</span>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                </div>
+                <a href="#" class="details">View Details →</a>
+              </div>
+            </div>
+            <div class="projects-container">
+              <div class="project-card">
+                <div class="icon">
+                  <i class="fa-regular fa-folder-open"></i>
+                </div>
+                <h3>Parallax Website</h3>
+                <p>
+                  A full-stack developer portfolio platform featuring an
+                  AI-powered chatbot that dynamically answers questions about
+                  projects and skills.
+                </p>
+                <div class="tags">
+                  <span>JavaScript</span>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                </div>
+                <a href="#" class="details">View Details →</a>
+              </div>
+            </div>
+            <div class="projects-container">
+              <div class="project-card">
+                <div class="icon">
+                  <i class="fa-regular fa-folder-open"></i>
+                </div>
+                <h3>Job application</h3>
+                <p>
+                  A full-stack developer portfolio platform featuring an
+                  AI-powered chatbot that dynamically answers questions about
+                  projects and skills.
+                </p>
+                <div class="tags">
+                  <span>JavaScript</span>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                </div>
+                <a href="#" class="details">View Details →</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      
+      <div id="achivements">
+        <section class="achivements">
+          <h3 class="achivements-title">
+            Achivements & <span>Experience</span>
+          </h3>
+          <div class="underline"></div>
+          <div class="achivements-items">
+            <div>
+              <div class="achi-exper-section">
+                @The Arena Developers intern as a devoloper
+              </div>
+              <div class="achi-exper-section">
+                @Innobyte @intern as a Frontend Developer
+              </div>
+            </div>
+            <div>
+              <div class="achi-exper-section">
+                @The Arena Developers intern as a devoloper
+              </div>
+              <div class="achi-exper-section">
+                @Innobyte @intern as a Frontend Developer
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="contact">
+        <section class="contact">
+          <h2 class="section-title">Get In <span>Touch</span></h2>
+          <div class="underline"></div>
+          <div class="contact-container">
+            <div class="contact-info">
+              <h3>Contact Information</h3>
+              <div class="info-box">
+                <i class="fa-regular fa-envelope"></i>
+                <div>
+                  <h4>Email</h4>
+                  <p>natarudebsarma17@gmail.com</p>
+                </div>
+              </div>
+              <div class="info-box">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                  <h4>Phone</h4>
+                  <p>+91 9883955327</p>
+                </div>
+              </div>
+            </div>
+            <div class="contact-form">
+              <form id="info-form">
+                <label>Name</label>
+                <input type="text" placeholder="Your name" />
+                <label>Email</label>
+                <input type="email" placeholder="your.email@example.com" />
+                <label>Message</label>
+                <textarea placeholder="Your message..."></textarea>
+                <button type="submit" id="form-btn">
+                  <i class="fa-regular fa-paper-plane"></i> Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2026 Nataru Debsarma || All Rights Reserved</p>
+      <form action="#">
+        <button id="foot-btn">Back to top</button>
+      </form>
+    </footer>
+    <!-- CHATBOT -->
+    <div id="chatbot">
+      <div id="chat-header">💬 Ask Me</div>
+      <div id="chat-body"></div>
+      <input type="text" id="chat-input" placeholder="Ask about me..." />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
